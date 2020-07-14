@@ -5,6 +5,13 @@ body{
 
 .layout{
     border: 3px solid orangered;
+    width: 1200px;
+    margin: 0px auto;
+
+    padding: 10px;
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(4, 1fr);
 }
 
 .layout .caja{
