@@ -1,0 +1,34 @@
+body{
+   text-align: center;
+   font-family: sans-serif;
+}
+
+.layout{
+    border: 3px solid orangered;
+}
+
+.layout .caja{
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    padding: 20px;
+    border: 4px solid #222;
+    margin: 10px;
+    background-color: gray;  
+}
+
+.layout .red{
+    background: red;
+}
+
+.layout .green{
+    background: green;
+}
+
+.layout .blue{
+    background: blue;
+}
+
+.layout .pink{
+    background: pink;
+}
