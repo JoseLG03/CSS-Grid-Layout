@@ -5,13 +5,15 @@ body{
 
 .layout{
     border: 3px solid orangered;
-    width: 1200px;
+    min-height: 400px;
+    width: 90%;
     margin: 0px auto;
 
     padding: 10px;
     display: grid;
     grid-gap: 5px;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr) 2fr;
 }
 
 .layout .caja{
@@ -26,16 +28,29 @@ body{
 
 .layout .red{
     background: red;
+    grid-column: 1/4;
 }
 
 .layout .green{
     background: green;
+    grid-row: 2/5;
 }
 
 .layout .blue{
     background: blue;
+    grid-column: 4/2;
 }
 
 .layout .pink{
     background: pink;
+    grid-column: 2/3;
+}
+
+.layout .orange{
+    background: orange;
+}
+
+.layout .brown{
+    background: brown;
+    grid-column: 2/4;
 }
