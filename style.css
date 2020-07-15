@@ -6,47 +6,43 @@ body{
 div.contenedor{
     border: 3px solid orangered;
     width: 80%;
+    height: 500px;
     margin: 0px auto;
     display: grid;
-    grid-gap: 5px;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 150px 70px 1fr 70px;
 }
 
 .box{
     font-size: 12px;
     font-weight: bold;
     color: white;
-    padding: 10px;
-    border: 4px solid #222;
-    margin: 5px;
+    border: 2px solid #222;
 }
 
 header{
     background-color: brown;
-    grid-column: 1/5;
+    grid-column: 1/6;
 }
 
 nav#menu{
     background-color: blue;
-    grid-column: 1/5;
+    grid-column: 1/6;
 }
 
 section#contenido{
     background-color: purple;
-    grid-column: 1/4;
-    grid-row: 3/5;
+    grid-column: 1/5;
 }
 
 aside{
     background-color: orangered;
-    grid-column: 4/5;
-    grid-row: 3/5;
+    grid-column: 5/6;
 }
 
 footer{
     background-color: pink;
-    grid-column: 1/5;
+    grid-column: 1/6;
 }
 
 
