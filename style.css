@@ -5,12 +5,12 @@ body{
 
 div.contenedor{
     border: 3px solid orangered;
-    width: 100%;
+    width: 80%;
     margin: 0px auto;
     display: grid;
     grid-gap: 5px;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(6, 1fr);
+    grid-template-rows: repeat(5, 1fr);
 }
 
 .box{
@@ -24,28 +24,29 @@ div.contenedor{
 
 header{
     background-color: brown;
+    grid-column: 1/5;
 }
 
-div#menu{
+nav#menu{
     background-color: blue;
     grid-column: 1/5;
 }
 
-div#contenido{
-    order: 1;
-    grid-column: 1/4;
-    grid-row: 2/7;
+section#contenido{
     background-color: purple;
+    grid-column: 1/4;
+    grid-row: 3/5;
 }
 
-div#aside{
-    order: 3;
+aside{
     background-color: orangered;
-    grid-row: 2/7;
+    grid-column: 4/5;
+    grid-row: 3/5;
 }
 
 footer{
     background-color: pink;
+    grid-column: 1/5;
 }
 
 
