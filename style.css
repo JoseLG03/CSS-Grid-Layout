@@ -4,49 +4,73 @@ body{
 }
 
 div.contenedor{
-    border: 3px solid orangered;
     width: 80%;
     height: 500px;
     margin: 0px auto;
+    padding: 0px;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: 150px 70px 1fr 70px;
 }
 
-.box{
+.box, article{
     font-size: 12px;
     font-weight: bold;
     color: white;
-    border: 2px solid #222;
+    border: 2px solid black;
 }
 
 header{
-    background-color: brown;
+    background-color: black;
     grid-column: 1/6;
+    justify-content: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 nav#menu{
     background-color: blue;
     grid-column: 1/6;
+    line-height: 55px;
 }
 
 section#contenido{
-    background-color: purple;
+    background-color: gray;
     grid-column: 1/5;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:25px;
+    padding: 10px;
+    line-height: 80px;
 }
 
 aside{
-    background-color: orangered;
+    background-color: gainsboro;
     grid-column: 5/6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 footer{
-    background-color: pink;
+    background-color: black;
     grid-column: 1/6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+li a{
+    text-decoration: none;
+    color: white;
+}
 
-
+nav#menu ul {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    list-style: none;
+}
 
 /*Otro contenido*/
 
