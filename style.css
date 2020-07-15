@@ -3,27 +3,45 @@ body{
    font-family: sans-serif;
 }
 
-div.layaout_p{
+div.contenedor{
     border: 3px solid orangered;
-    min-height: 400px;
-    width: 80%;
+    width: 100%;
     margin: 0px auto;
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+}
+
+.box{
+    font-size: 12px;
+    font-weight: bold;
+    color: white;
+    padding: 10px;
+    border: 4px solid #222;
+    margin: 5px;
 }
 
 header{
     background-color: brown;
 }
 
-div.menu{
-    background-color: yellow;
+div#menu{
+    background-color: blue;
+    grid-column: 1/5;
 }
 
-div.contenido{
+div#contenido{
+    order: 1;
+    grid-column: 1/4;
+    grid-row: 2/7;
     background-color: purple;
 }
 
-div.aside{
+div#aside{
+    order: 3;
     background-color: orangered;
+    grid-row: 2/7;
 }
 
 footer{
@@ -34,19 +52,6 @@ footer{
 
 
 /*Otro contenido*/
-
-.layout_p .box{
-    font-size: 20px;
-    font-weight: bold;
-    color: white;
-    padding: 5px;
-    border: 4px solid #222;
-    margin: 10px;  
-}
-
-
-
-
 
 .layout{
     border: 3px solid orangered;
