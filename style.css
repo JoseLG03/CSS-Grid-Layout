@@ -17,8 +17,8 @@ body{
      grid-template-rows: 150px 70px 1fr 70px;
      grid-template-areas: 
      "cabeza cabeza cabeza cabeza cabeza"
-     "menu menu menu menu menu"
-     "contenido contenido contenido contenido aside"
+     "aside menu menu menu menu"
+     "aside contenido contenido contenido contenido"
      "pie pie pie pie pie"; 
  }
  
