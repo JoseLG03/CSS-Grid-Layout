@@ -1,0 +1,85 @@
+body{
+    text-align: center;
+    font-family: sans-serif;
+ }
+ 
+ /*Ejemlo trabajando con areas*/
+ 
+ 
+ div.website{
+     width: 90%;
+     height: 500px;
+     margin: 0px auto;
+     padding: 0px;
+     display: grid;
+     grid-template-columns: repeat(5, 1fr);
+     grid-template-rows: 150px 70px 1fr 70px;
+     grid-template-areas: 
+     "cabeza cabeza cabeza cabeza cabeza"
+     "menu menu menu menu menu"
+     "contenido contenido contenido contenido aside"
+     "pie pie pie pie pie";
+ 
+ }
+ 
+ div.website.box, article{
+     font-size: 12px;
+     font-weight: bold;
+     border: 2px solid black;
+ }
+ 
+ div.website article{
+     color: black;
+ }
+ div.website header{
+     background-color: blue;
+     justify-content: center;
+     grid-area: cabeza;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+ 
+ div.website nav#menu{
+     background-color: lightblue;
+     /*line-height: 55px;*/
+     grid-area: menu;
+ }
+ 
+ div.website section#contenido{
+     background-color: lightcyan;
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     grid-gap:25px;
+     padding: 10px;
+     /*line-height: 80px;*/
+     grid-area: contenido;
+ }
+ 
+ div.website aside{
+     background-color: lightgreen;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     grid-area: aside;
+ }
+ 
+ div.website footer{
+     background-color: lightslategrey;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     grid-area: pie;
+ }
+ 
+ div.website li a{
+     text-decoration: none;
+     color: white;
+ }
+ 
+ div.website nav#menu ul {
+     display: grid;
+     grid-template-columns: repeat(8, 1fr);
+     list-style: none;
+ }
+ 
