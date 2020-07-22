@@ -111,18 +111,19 @@
 
 /*aside*/
 #aside{
-    background-color: gray;
     margin-right: 30px;
     padding: 15px;
 }
 
 #aside h2{
-    font-size: 18px;
+    width: 100%;
+    display: block;
+    font-size: 22px;
     font-weight: 100;
     color: #444;
-    padding-bottom: 2px;
-    margin-bottom: 2px;
-    border-bottom: 1px solid rgba(225, 225, 226, 0.8);
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid rgba(225, 225, 226, 0.8);
     text-align: center;
 }
 
@@ -131,13 +132,14 @@
 }
 
 #aside ul li{
-    padding-bottom: 2px;
+    padding-bottom: 20px;
 }
 
 #aside ul li a{
     display: block;
     text-align: center;
     background: #eee;
+    padding: 20px;
     color: #444;
     text-transform: uppercase;
     transition: all 300ms;
