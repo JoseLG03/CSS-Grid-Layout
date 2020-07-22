@@ -66,10 +66,16 @@
 }
 
 /*Contenido*/
+#contenido{
+    display: grid;
+    grid-template-columns: 20% 1fr;
+    justify-content: space-between;
+}
 
 #projects{
-    justify-content: space-between;
-    background-color: red;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    align-items: center;
 }
 
 .project{
